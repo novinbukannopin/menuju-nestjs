@@ -1,0 +1,25 @@
+### CREATE NEW USERS
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+  "email": "doni@solomon.id",
+  "password": "donidoni"
+}
+
+### FIND USER BY ID
+GET http://localhost:3000/auth/1
+
+### FIND ALL USERS BY EMAIL
+GET http://localhost:3000/auth?email=doni@solomon.id
+
+### REMOVE USERS BY ID
+DELETE http://localhost:3000/auth/2
+
+### UPDATE USERS BY ID
+PATCH http://localhost:3000/auth/1
+Content-Type: application/json
+
+{
+  "email": "novin@solomon.id"
+}
