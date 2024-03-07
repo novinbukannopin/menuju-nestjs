@@ -3,9 +3,30 @@ POST http://localhost:3000/auth/signup
 Content-Type: application/json
 
 {
-  "email": "doni@solomon.id",
-  "password": "donidoni"
+  "email": "session@solomon.id",
+  "password": "sessionsession"
 }
+
+### LOGIN USERS
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+  "email": "session@solomon.id",
+  "password": "sessionsession"
+}
+
+### WHOAMI
+GET http://localhost:3000/auth/whoami
+
+### LOGOUT
+POST http://localhost:3000/auth/signout
+
+### SET COLOR WITH PARAM
+GET http://localhost:3000/auth/colors/blue
+
+### GET COLORS
+GET http://localhost:3000/auth/colors
 
 ### FIND USER BY ID
 GET http://localhost:3000/auth/1
