@@ -12,8 +12,8 @@ POST http://localhost:3000/auth/signin
 Content-Type: application/json
 
 {
-  "email": "session@solomon.id",
-  "password": "sessionsession"
+  "email": "novin@solomon.id",
+  "password": "novinnovin"
 }
 
 ### WHOAMI

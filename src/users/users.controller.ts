@@ -6,12 +6,10 @@ import { Serialize, SerializeInterceptor } from "../interceptors/serialize.inter
 import { UserDto } from "./dtos/user.dto";
 import { AuthService } from "./auth.service";
 import { CurrentUser } from "./decorators/current-user.decorator";
-import { CurrentUserInterceptor } from "./interceptors/current-user.interceptor";
 import { User } from "./users.entity";
 
 @Controller('auth')
 @Serialize(UserDto)
-@UseInterceptors(CurrentUserInterceptor)
 export class UsersController {
   constructor(
     private userService: UsersService,
