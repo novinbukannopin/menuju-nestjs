@@ -4,7 +4,7 @@ import { UsersService } from "./users.service";
 import { User } from "./users.entity";
 import { BadRequestException, NotFoundException } from "@nestjs/common";
 
-describe("AuthService", () => {
+describe("Auth Service", () => {
   let service: AuthService;
   let fakeUsersService: Partial<UsersService>;
 
